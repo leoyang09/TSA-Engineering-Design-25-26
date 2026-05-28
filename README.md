@@ -1,2 +1,13 @@
-# TSA-Engineering-Design-25-26
-Earned 1st place in the Engineering Design event at the WTSA competition, applying electrical engineering, microcontroller programming, and AI/ML to develop AquaFusion: a modular multi-parameter device for distributed deployment and dense monitoring networks across diverse freshwater environments. National Qualifier @ Washington DC.
+# AquaFusion: AI-Powered Edge IoT Environmental Monitor
+
+A modular, multi-parameter IoT device for distributed deployment and dense monitoring across diverse freshwater environments. 
+
+## Technical Architecture & Core Modules
+
+* **Edge AI Anomaly Detection (`Autoencoder.cpp`)**: Runs an on-device neural network autoencoder to detect sensor anomalies and environmental contamination in real-time without cloud dependency.
+* **Signal Filtering (`KalmanFilter.h`)**: Implements raw data smoothing to eliminate environmental noise from dynamic water currents before features are passed to the ML model.
+* **Multi-Sensor Driver Pipeline**: Modular C++ architecture interfacing with pH, TDS, Turbidity, Depth, and Temperature arrays simultaneously.
+
+## Hardware Stack
+* **Microcontroller**: Raspberry Pi Pico
+* **Language**: C++ / C (92% optimized for embedded performance)
